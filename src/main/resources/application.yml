@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: driverhire
+
+driver:
+  hire:
+    mongo:
+      db:
+        uri: "uri"
