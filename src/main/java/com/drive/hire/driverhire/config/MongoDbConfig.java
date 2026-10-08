@@ -8,10 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
 
-import org.bson.Document;
-import java.util.HashMap;
-import java.util.Map;
-
 @Configuration
 public class MongoDbConfig {
 
