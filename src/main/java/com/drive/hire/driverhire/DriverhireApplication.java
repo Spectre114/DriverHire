@@ -1,14 +1,8 @@
 package com.drive.hire.driverhire;
 
-import com.drive.hire.driverhire.model.Driver;
-import com.drive.hire.driverhire.repository.DriverRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.mongodb.autoconfigure.MongoAutoConfiguration;
-import org.springframework.context.ConfigurableApplicationContext;
-
-import java.util.List;
 
 @SpringBootApplication(exclude = {
 		MongoAutoConfiguration.class,
