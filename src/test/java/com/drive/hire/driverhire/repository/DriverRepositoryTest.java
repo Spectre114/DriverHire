@@ -15,7 +15,6 @@ import org.springframework.dao.DataAccessResourceFailureException;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
 import com.drive.hire.driverhire.model.Driver;
-import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 
 import java.util.Collections;
@@ -36,8 +35,8 @@ public class DriverRepositoryTest {
     public void setUp() {
         driver = Driver.builder()
                 .id(1)
-                .name("Kartick")
-                .pass("122345")
+                .name("name")
+                .pass("pass")
                 .phNum(12345)
                 .build();
     }
