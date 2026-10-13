@@ -22,6 +22,7 @@ public class DriverhireApplication {
 //		driverRepository.insertDriver(driver);
 //        List<Driver> fetchDriver = driverRepository.getDriver(1);
 //		System.out.println(fetchDriver);
+		//TODO use sql instead of mongoDb for schema
 	}
 
 }

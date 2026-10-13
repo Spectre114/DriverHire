@@ -18,7 +18,7 @@ public class User {
     private String pass;
     private String email;
     @NotNull
-    private String phNum;
+    private int phNum;
     private String rating;
     private String pic;
 

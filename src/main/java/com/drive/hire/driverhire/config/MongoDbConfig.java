@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 public class MongoDbConfig {
@@ -29,5 +31,10 @@ public class MongoDbConfig {
         MongoClient client = MongoClients.create(uri);
         return new MongoTemplate(new SimpleMongoClientDatabaseFactory(client, "driverHire"));
 //        template.insert(new Document(map), "driverHire");
+    }
+
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 }
